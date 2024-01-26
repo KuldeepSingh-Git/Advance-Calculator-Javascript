@@ -1,0 +1,91 @@
+*{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+   border-radius: 1rem;
+   border: none;
+}
+.main{
+    background-color: rgba(126, 227, 211, 0.67);
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+h1{
+    font-size: 3em ;
+}
+.calculator{
+    height: 80%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.297) 20px 20px 20px,rgba(255, 255, 255, 0.645) -20px -20px 20px;
+    background-color: rgba(126, 227, 211, 0.67);
+}
+#input{
+    text-align: right;
+    height: 80%;
+    width: 100%;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    padding-right: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.451) 5px 5px 10px inset,rgba(255, 255, 255, 0.962) -5px -5px 10px inset;
+    background-color: rgba(126, 227, 211, 0.67);
+}
+.row{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-row{
+    height: 85%;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+}
+.clearbtns{
+    height: 90%;
+    width: 47.5%;
+    font-size: 2rem;
+    background-color: #33a3cc;
+    box-shadow: rgba(0, 0, 0, 0.297) -5px -5px 10px inset,rgba(255, 255, 255, 0.645) -10px -10px 10px;
+    transition: 0.3s ease;
+}
+.btn{
+    text-align: center;
+    font-size: 2rem;
+    height: 4rem;
+    width: 7rem;
+    margin: 0.3rem;
+    box-shadow: rgba(0, 0, 0, 0.297) 10px 10px 10px,rgba(255, 255, 255, 0.645) -10px -10px 10px;
+    background-color: rgba(126, 227, 211, 0.67);
+    transition: 0.5s;
+}
+.result{
+    height: 80%;
+    width: 100%;
+    font-size: 2rem;
+    padding: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.297) -5px -5px 10px inset,rgba(255, 255, 255, 0.645) -10px -10px 10px;
+    background: #33cc33;
+    transition: 0.3s ease;
+}
+.btn:active{
+    box-shadow: inset 5px 5px 8px rgba(16,16,16,0.1),inset -5px -5px 8px #fff;
+    background: #fff;
+    transform: scale(1.02);
+}
+.result:active , .clearbtns:active{
+    box-shadow: inset 5px 5px 8px rgba(0, 0, 0, 0.297), inset -5px -5px 8px rgba(0, 0, 0, 0.297);
+    transform: scale(1.02);
+}

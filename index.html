@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <h1>Calculator</h1>
+            <div class="calculator">
+                <input id="input" type="text" name="digits" placeholder="0" readonly>
+                <div class="top-row">
+                    <button class="clearbtns" onclick="clr()">AC</button>
+                    <button class="clearbtns" onclick="backspace()">CE</button>
+                </div>
+                <div class="row">
+                    <button class="btn" onclick="numbers('7')">7</button>
+                    <button class="btn" onclick="numbers('8')">8</button>
+                    <button class="btn" onclick="numbers('9')">9</button>
+                    <button class="btn" onclick="numbers('/')">/</button>
+                </div>
+                <div class="row">
+                    <button class="btn" onclick="numbers('4')">4</button>
+                    <button class="btn" onclick="numbers('5')">5</button>
+                    <button class="btn" onclick="numbers('6')">6</button>
+                    <button class="btn" onclick="numbers('*')">*</button>
+                </div>
+                <div class="row">
+                    <button class="btn" onclick="numbers('1')">1</button>
+                    <button class="btn" onclick="numbers('2')">2</button>
+                    <button class="btn" onclick="numbers('3')">3</button>
+                    <button class="btn" onclick="numbers('-')">-</button>
+                </div>
+                <div class="row">
+                    <button class="btn" onclick="numbers('.')">.</button>
+                    <button class="btn" onclick="numbers(0)">0</button>
+                    <button class="btn" onclick="squrt()">√</sup></button>
+                    <button class="btn" onclick="numbers('+')">+</button>
+                </div>
+                <div class="row">
+                    <button class="result" onclick="result()">Result</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
